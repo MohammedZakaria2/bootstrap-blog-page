@@ -1,0 +1,173 @@
+:root {
+  --primary: #f4623a;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --light: #f8f9fa;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Merriweather Sans", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: var(--font-family-sans-serif);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-dark);
+}
+
+.container {
+  max-width: 71.25rem;
+  margin: auto;
+}
+nav {
+  background-color: transparent;
+}
+nav > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.container > h2 {
+  flex: 1.5;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray-dark);
+  margin-left: 15px;
+}
+
+ul.nav-bar-menu {
+  flex: 0.7;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+
+ul.nav-bar-menu li a {
+  font-size: 0.8.5rem;
+  font-weight: 600;
+}
+
+ul.nav-bar-menu li a:hover {
+  color: var(--primary);
+}
+
+/* hero */
+
+.hero {
+  background-image: url("./img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+  opacity: 0.2;
+  z-index: 0;
+} */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.wrapper h1,
+.wrapper p {
+  color: var(--white);
+}
+
+.wrapper h1 {
+  margin: 6px;
+}
+
+/*footer*/
+.contactSection {
+  padding: 8rem 0;
+}
+.justifyCenter {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Merriweather";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.textCenter {
+  text-align: center !important;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  font-family: "Merriweather";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.d-block {
+  display: block;
+  text-align: center;
+}
+
+/* this is a problem you  */
+a {
+  color: #f4623a;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* here */
